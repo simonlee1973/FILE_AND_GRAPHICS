@@ -37,7 +37,8 @@ function del($table ,$where){
 }
 
 function find($table,$where){
-    $sql="select count(id) from $table where $where";
+    //$sql="select count(id) from $table where $where";
+    $sql="select * from $table where $where";
     //echo "<h2>".$sql."</h2>";
     $pdo=pdo(DBNAME);
     $row=$pdo->query($sql)->fetch(PDO::FETCH_ASSOC);    

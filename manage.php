@@ -67,8 +67,9 @@
     }
     $dirpath="./files";
     $items=scandir($dirpath);
+    //dd($items);
     $items=array_diff($items,array('.','..'));
-    dd($items);
+     dd($items);
 
   
 
